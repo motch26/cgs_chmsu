@@ -256,6 +256,7 @@ router.post("/updateGrade", async (req, res) => {
       (prev, current) => prev + current,
       0
     );
+    conn.query("");
 
     res.status(200).json(totalAffectedRows);
   } catch (error) {
